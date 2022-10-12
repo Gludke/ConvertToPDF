@@ -1,8 +1,11 @@
 ﻿using ConvertPDF;
 using InteropWindows2;
-using PDFsharpCore;
+using PDFsharpWindows;
+using System.Text;
 
 
+
+Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
 ConvertWordToPdf();
 ConvertImgToPdf();
@@ -12,10 +15,9 @@ Console.ReadLine();
 
 
 
-
 static void ConvertImgToPdf()
 {
-    PdfHelper.SaveImageAsPdf("C:\\Users\\Guilherme\\Desktop\\Teste01.jpg", "C:\\Users\\Guilherme\\Desktop\\Teste01.pdf");
+    PdfHelper.SaveImageAsPdf("C:\\Users\\Guilherme\\Desktop\\Teste02png.png", "C:\\Users\\Guilherme\\Desktop\\Teste01.pdf");
 
     Console.WriteLine("Imagem convertida para PDF.");
 }

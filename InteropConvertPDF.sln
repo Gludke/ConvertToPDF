@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertPDF", "ConvertPDF.csproj", "{02B66122-C813-409A-9164-FE0B46F1018D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteropWindows2", "..\InteropWindows2\InteropWindows2.csproj", "{D0A44649-E509-49D1-81BE-A9886AB244C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteropWindows", "..\InteropWindows2\InteropWindows.csproj", "{D0A44649-E509-49D1-81BE-A9886AB244C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFsharpWindows", "..\PDFsharpWindows\PDFsharpWindows.csproj", "{45668520-FC68-4084-B9E8-40BF6FE61BA9}"
 EndProject
