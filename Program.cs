@@ -4,20 +4,26 @@ using PDFsharpWindows;
 using System.Text;
 
 
-
+//necessário fazer esse registro para codificar imagens
 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
 ConvertWordToPdf();
-ConvertImgToPdf();
+ConvertJpgToPdf();
+ConvertPngToPdf();
 
 Console.ReadLine();
 
 
-
-
-static void ConvertImgToPdf()
+static void ConvertJpgToPdf()
 {
-    PdfHelper.SaveImageAsPdf("C:\\Users\\Guilherme\\Desktop\\Teste02png.png", "C:\\Users\\Guilherme\\Desktop\\Teste01.pdf");
+    PdfHelper.SaveImageAsPdf("C:\\Users\\Guilherme\\Desktop\\Teste01.jpg", "C:\\Users\\Guilherme\\Desktop\\Teste01.pdf");
+
+    Console.WriteLine("Imagem convertida para PDF.");
+}
+
+static void ConvertPngToPdf()
+{
+    PdfHelper.SaveImageAsPdf("C:\\Users\\Guilherme\\Desktop\\Teste02png.png", "C:\\Users\\Guilherme\\Desktop\\Teste02png.pdf");
 
     Console.WriteLine("Imagem convertida para PDF.");
 }
